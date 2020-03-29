@@ -1,4 +1,100 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png"
+        href="https://migracode.openculturalcenter.org/wp-content/uploads/2019/06/cropped-favicon-1-32x32.png">
+    <title>Migracode|Hotel</title>
+
+
+    <!-- Css file -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="lbs/js/jquery.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="main_header">
+        <img id="header_logo" src="img/logo.png" alt="logo">
+        <ul class="nav_items">
+            <li><a id="current_page" href="#">Home</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Blog</a></li>
+
+
+            </ol>
+
+    </div>
+    <div id="main_content">
+        <div id="video_container"><video loop muted autoplay src="media/videomallorca.mp4"></video>
+            <div id="moto">
+                <h3>DON'T STOP TRAVELLING NOW, IT'S JUST A FLU</h3><br>
+                <h4>Use our 70% off promcode: COVID-19</h4>
+            </div>
+            <div id="search_toolbar">
+                <div id="_1"><img width="28px" src="img/bed.png" alt="bed">
+                    <h6>HOTEL</h6>
+                </div>
+                <div id="main_toolbar">
+                    <form id="search_form" action="hotelpage.html" method="get">
+                        <div id="search_space">
+                            <img width="16px" src="img/search.png" alt="search">
+                            <label for="cityinput">City</label>
+                            <input placeholder="Ciudad" id="cityinput" name="cityinput" type="text">
+                        </div>
+                        <div id="datepicker">
+                            <div class="start_date_group">
+                                <label for="start_date">Check in</label>
+                                <input type="date" name="start_date" id="start_date"></div> -
+                            <div class="start_date_group"><label for="end_date">Check out</label><input type="date"
+                                    name="end_date" id="end_date"></div>
+                        </div>
+                        <div id="room_selector">
+                            <select  name="rooms" id="rooms">
+                                <option  value="Single">Single</option>
+                                <option  value="Double">Double</option>
+                                <option selected value="Family Room">Family Room</option>
+                                <option value="Multiple">Multiple</option>
+                            </select></div>
+                        <p><input id="submit" type="submit" value="Buscar"></p>
+
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
 </html>
